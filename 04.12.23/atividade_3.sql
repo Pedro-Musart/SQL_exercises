@@ -5,7 +5,7 @@ CREATE TABLE tb_estudantes(
 	id BIGINT AUTO_INCREMENT,
     nome VARCHAR(255) NOT NULL,
     datanascimento DATE NOT NULL,
-    cpf BIGINT NOT NULL,
+    cpf BIGINT NOT NULL, -- CPF é feito como string, devido aos traços e pontos!
     nota DECIMAL, 
     primary key (id)
 );

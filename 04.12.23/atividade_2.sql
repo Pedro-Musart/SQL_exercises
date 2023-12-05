@@ -10,6 +10,8 @@ CREATE TABLE tb_produtos(
 	primary key (id)
 );
 
+ALTER TABLE tb_produtos MODIFY preco DECIMAL(9,2);
+
 INSERT INTO tb_produtos(nome, categoria, tipo, preco)
 VALUES("Guitarra", "Instrumentos Musicais", "Stratocaster", 1200),
 ("Teclado", "Instrumentos Musicais", "Digital", 800),
